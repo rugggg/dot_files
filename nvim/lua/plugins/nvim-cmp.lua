@@ -113,6 +113,7 @@ M.config = function()
         }
       }
   }
+  require('lspconfig')['tsserver'].setup{}
 end
 
 return M
