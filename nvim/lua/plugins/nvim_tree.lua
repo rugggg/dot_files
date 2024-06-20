@@ -15,7 +15,7 @@ M.config = function()
 	    group_empty = true,
 	  },
 	  filters = {
-	    dotfiles = true,
+	    dotfiles = false,
 	  },
   })
 local nt_api = require("nvim-tree.api")
