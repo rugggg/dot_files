@@ -26,6 +26,12 @@ local ok, err = pcall(function()
   dofile(autocmds_path)
 end)
 
+-- Open a terminal in a horizontal split
+vim.api.nvim_set_keymap('n', '<leader>th', ':split | terminal<CR>', {noremap = true, silent = true})
+-- Open a terminal in a vertical split
+vim.api.nvim_set_keymap('n', '<leader>tv', ':vsplit | terminal<CR>', {noremap = true, silent = true})
+
+
 require("lazy").setup("plugins")
 
 
