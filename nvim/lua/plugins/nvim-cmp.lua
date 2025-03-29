@@ -123,6 +123,20 @@ M.config = function()
       }
   }
   require('lspconfig')['tsserver'].setup{}
+  -- Rust-specific configuration
+  require("lspconfig").rust_analyzer.setup({
+    capabilities = capabilities,
+    settings = {
+      ["rust-analyzer"] = {
+        checkOnSave = {
+          command = "check"
+        },
+        inlayHints = {
+          locationLinks = false
+        }
+       }
+     }
+   })
 end
 
 return M

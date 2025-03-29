@@ -16,6 +16,7 @@ M.config = function ()
     "pyright",
     "black",
     "debugpy",
+    "rust_analyzer"
   }
 
   for _, tool in ipairs(ensure_installed) do
