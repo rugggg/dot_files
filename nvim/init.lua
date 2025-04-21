@@ -20,7 +20,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local config_dir = vim.fn.stdpath('config')
 local autocmds_path = config_dir .. '/lua/autocmds.lua'
-print("Attempting to load from: " .. autocmds_path)
 
 local ok, err = pcall(function()
   dofile(autocmds_path)
